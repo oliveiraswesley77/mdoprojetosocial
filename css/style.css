@@ -1,5 +1,5 @@
 /* ==========================================================================
-   AURORA FUTEBOL CLUBE - ESTILOS PRINCIPAIS (STYLE.CSS)
+   MDO projeto social - ESTILOS PRINCIPAIS (STYLE.CSS)
    Design Esportivo Premium, Moderno, Dinâmico e 100% Responsivo
    ========================================================================== */
 
@@ -103,6 +103,18 @@ ul {
   max-width: 1240px;
   margin: 0 auto;
   padding: 0 1.5rem;
+}
+
+main,
+section,
+footer,
+.container,
+.section-header,
+.timeline-card,
+.category-details,
+.tour-text,
+.footer-col {
+  min-width: 0;
 }
 
 .section {
@@ -1973,8 +1985,59 @@ ul {
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
   .section {
     padding: 4.5rem 0;
+  }
+
+  .brand-name span:first-child {
+    font-size: 1.25rem;
+  }
+
+  .brand-logo {
+    gap: 0.55rem;
+  }
+
+  .brand-crest {
+    width: 38px;
+    height: 38px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.7rem, 13vw, 4.2rem);
+  }
+
+  .hero-title br {
+    display: none;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-cta-group .btn {
+    width: 100%;
+  }
+
+  .history-values-list,
+  .academy-pillars,
+  .category-specs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .history-floating-badge {
+    right: 0;
+    max-width: calc(100% - 1rem);
+    padding: 1rem;
   }
 
   .menu-toggle {
@@ -2032,6 +2095,44 @@ ul {
     padding: 1.5rem;
   }
 
+  .stadium-hero-banner {
+    height: 360px;
+  }
+
+  .stadium-tour-cta,
+  .academy-hero-card,
+  .category-content-card,
+  .peneiras-banner {
+    padding: 1.5rem;
+  }
+
+  .category-header-tag {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .category-photo-wrapper {
+    height: 280px;
+  }
+
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .newsletter-form {
+    border-radius: var(--radius-md);
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .newsletter-form .btn {
+    width: 100%;
+  }
+
   .peneiras-banner {
     flex-direction: column;
     text-align: center;
@@ -2040,5 +2141,62 @@ ul {
 
   .footer-top-grid {
     grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-badge-container {
+    align-items: flex-start;
+    font-size: 0.75rem;
+    text-align: left;
+  }
+
+  .hero-stats-strip {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stat-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+
+  .timeline-item {
+    padding-left: 45px;
+    padding-right: 0;
+  }
+
+  .timeline-wrapper::after {
+    left: 10px;
+  }
+
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 0;
+  }
+
+  .stadium-hero-banner {
+    height: 320px;
+  }
+
+  .stadium-banner-overlay {
+    padding: 1rem;
+  }
+
+  .stadium-info-title h3 {
+    font-size: 1.8rem;
+  }
+
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-card {
+    padding: 2rem 1rem 1rem;
   }
 }
